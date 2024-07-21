@@ -9,13 +9,13 @@ export const config: BotConfig = {
         prefixes: ['tco!'],
     },
     permissions: {
-        all: [''],
-        ranking: [''],
+        all: ['1233769721896374282','1238193223025950851','1238434536061145130','1233879749043159202','1234583107676405780'],
+        ranking: ['1233769776875044927','1233769806499680328'],
         users: [''],
         shout: [''],
         join: [''],
         signal: [''],
-        admin: [''],
+        admin: ['1233769776875044927'],
     },
     logChannels: {
         actions: '',
