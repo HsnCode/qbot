@@ -21,22 +21,22 @@ import { provider } from '../../database';
 class PromoteCommand extends Command {
     constructor() {
         super({
-            trigger: 'promote',
-            description: 'Promotes a user in the Roblox group.',
+            trigger: 'terfi',
+            description: 'Roblox grubundaki birinin rütbesini arttırır .',
             type: 'ChatInput',
             module: 'ranking',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to promote?',
+                    description: 'Kimin rütbesini arttiracaksin',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'sebep',
+                    description: 'Sebep yazınız ',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
