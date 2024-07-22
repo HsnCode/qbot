@@ -8,7 +8,7 @@ class JoinRequestsCommand extends Command {
     constructor() {
         super({
             trigger: 'joinrequests',
-            description: 'Gets a list of pending join requests.',
+            description: 'Gruba katılma isteklerini gösterir ',
             type: 'ChatInput',
             module: 'join-requests',
             permissions: [
