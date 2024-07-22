@@ -16,21 +16,21 @@ class DenyJoinCommand extends Command {
     constructor() {
         super({
             trigger: 'denyjoin',
-            description: 'Denies the join request from a user.',
+            description: 'Roblox kullanıcısının Gruba katılma isteğini red eder.',
             type: 'ChatInput',
             module: 'join-requests',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Whose join request do you want to deny?',
+                    description: 'Kimin Gruba katılma Isteğini Reddedeceksin',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'sebep',
+                    description: 'Sebep Giriniz.',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
