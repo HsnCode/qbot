@@ -40,7 +40,7 @@ export const config: BotConfig = {
         roles: [],
     },
     antiAbuse: {
-        enabled: false,
+        enabled: true,
         clearDuration: 1 * 10,
         threshold: 10,
         demotionRank: 1,
