@@ -16,21 +16,21 @@ class AcceptJoinCommand extends Command {
     constructor() {
         super({
             trigger: 'acceptjoin',
-            description: 'Accepts the join request from a user.',
+            description: 'Grup isteğini Kabul eder',
             type: 'ChatInput',
             module: 'join-requests',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Whose join request do you want to accept?',
+                    description: 'Kimin roblox grup davetini Kabul edeceksin',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'Sebep',
+                    description: 'Sebep giriniz ',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
