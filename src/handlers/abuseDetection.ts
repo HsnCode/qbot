@@ -21,7 +21,7 @@ const recordAction = async (moderator: User) => {
             const groupRoles = await robloxGroup.getRoles();
             const role = groupRoles.find((role) => role.rank === config.antiAbuse.demotionRank);
             await robloxGroup.updateMember(linkedUser.id, role.id);
-            logAction('Automatic Demotion', discordClient.user, '[Automatic] Admin abuse detected.', linkedUser);
+            logAction('Abuse Korumasi', discordClient.user, '[Automatic] Admin abuse tespit edildi.', linkedUser);
         } catch (err) {};
     }
 }
