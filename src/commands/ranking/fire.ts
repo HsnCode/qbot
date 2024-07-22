@@ -22,22 +22,22 @@ import { provider } from '../../database';
 class FireCommand extends Command {
     constructor() {
         super({
-            trigger: 'fire',
-            description: 'Sets a users rank in the Roblox group to 1.',
+            trigger: 'demote',
+            description: 'Roblox grubundaki birinin rütbesini sıfırlar ',
             type: 'ChatInput',
             module: 'ranking',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to fire?',
+                    description: 'Kimin rütbesini sıfırlayacaksin',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'sebep',
+                    description: 'sebep yazınız ',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
