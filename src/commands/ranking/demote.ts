@@ -36,7 +36,7 @@ class PromoteCommand extends Command {
                     trigger: 'sebep',
                     description: 'Sebepi yazınız zorunlu ',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
