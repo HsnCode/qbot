@@ -22,27 +22,27 @@ class SetRankCommand extends Command {
     constructor() {
         super({
             trigger: 'setrank',
-            description: 'Changes the rank of a user in the Roblox group.',
+            description: 'Roblox grubundaki birinin rütbesini değiştirir.',
             type: 'ChatInput',
             module: 'ranking',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Whose rank would you like to change?',
+                    description: 'Kimin rütbesini değiştireceksiniz ',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
                     trigger: 'roblox-role',
-                    description: 'What role would you like to change them to?',
+                    description: 'Hangi role değiştirmek istiyorsun',
                     autocomplete: true,
                     type: 'RobloxRole',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'sebep',
+                    description: 'Sebep giriniz ',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
