@@ -46,10 +46,10 @@ export const config: BotConfig = {
         demotionRank: 1,
     },
     activity: {
-        enabled: false,
+        enabled: true,
         type: ActivityType.Watching,
-        value: 'for commands.',
+        value: 'Tco Türkiye Cumhuriyeti Ordusu.',
     },
-    status: 'online',
+    status: 'dnd',
     deleteWallURLs: false,
 }
