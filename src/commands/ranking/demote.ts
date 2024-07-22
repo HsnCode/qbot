@@ -21,20 +21,20 @@ import { provider } from '../../database';
 class PromoteCommand extends Command {
     constructor() {
         super({
-            trigger: 'demote',
-            description: 'Demotes a user in the Roblox group.',
+            trigger: 'tenzil',
+            description: 'Roblox grubundaki birinin rütbesini düşürür ',
             type: 'ChatInput',
             module: 'ranking',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to demote?',
+                    description: 'Kimin rütbesini düşürmek istiyorsunuz?',
                     autocomplete: true,
                     type: 'RobloxUser',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'sebep',
+                    description: 'Sebepi yazınız zorunlu ',
                     isLegacyFlag: true,
                     required: false,
                     type: 'String',
