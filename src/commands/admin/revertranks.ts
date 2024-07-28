@@ -15,28 +15,28 @@ import { getLinkedRobloxUser } from '../../handlers/accountLinks';
 class RevertRanksCommand extends Command {
     constructor() {
         super({
-            trigger: 'revertranks',
-            description: 'Reverts all ranking events within the time of the specified duration.',
+            trigger: 'Gericevirme',
+            description: 'Belirtilen süre içindeki tüm sıralama etkinliklerini geri alır.',
             type: 'ChatInput',
             module: 'admin',
             args: [
                 {
                     trigger: 'duration',
-                    description: 'How much time of ranking events would you like to revert?',
+                    description: 'Sıralama etkinliklerinin ne kadar zamanını geri almak istersiniz??',
                     type: 'String',
                 },
                 {
                     trigger: 'filter',
-                    description: 'Do you want to filter actions to a specific Roblox user?',
+                    description: 'Eylemleri belirli bir Roblox kullanıcısına göre filtrelemek ister misiniz??',
                     autocomplete: true,
                     required: false,
                     type: 'RobloxUser',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'sebep',
+                    description: 'Sebep giriniz',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
