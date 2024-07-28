@@ -11,14 +11,14 @@ import {
 class HelpCommand extends Command {
     constructor() {
         super({
-            trigger: 'help',
-            description: 'Gets a list of commands to try.',
+            trigger: 'yardim',
+            description: 'Denenecek komutların bir listesini alir.',
             type: 'ChatInput',
             module: 'information',
             args: [
                 {
                     trigger: 'command-name',
-                    description: 'What command would you like to learn more about, if any?',
+                    description: 'hangi komut hakkında daha fazla bilgi edinmek istersiniz?',
                     required: false,
                     type: 'String',
                 },
