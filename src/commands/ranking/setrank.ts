@@ -21,7 +21,7 @@ import { provider } from '../../database';
 class SetRankCommand extends Command {
     constructor() {
         super({
-            trigger: 'setrank',
+            trigger: 'Rütbe-Değiştir',
             description: 'Roblox grubundaki birinin rütbesini değiştirir.',
             type: 'ChatInput',
             module: 'ranking',
