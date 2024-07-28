@@ -51,5 +51,5 @@ export const config: BotConfig = {
         value: 'Tco Türkiye Cumhuriyeti Ordusu.',
     },
     status: 'online',
-    deleteWallURLs: false,
+    deleteWallURLs: true,
 }
