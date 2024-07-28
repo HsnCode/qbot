@@ -6,7 +6,7 @@ import { getRoleListEmbed } from '../../handlers/locale';
 class RolesCommand extends Command {
     constructor() {
         super({
-            trigger: 'roles',
+            trigger: 'roller',
             description: 'Gruptaki Rolleri Gösterir ',
             type: 'ChatInput',
             module: 'information',
