@@ -12,19 +12,19 @@ class ShoutCommand extends Command {
     constructor() {
         super({
             trigger: 'shout',
-            description: 'Posts a shout on the Roblox group.',
+            description: 'Roblox grubuna bir duyuru gönderir.',
             type: 'ChatInput',
             module: 'shout',
             args: [
                 {
-                    trigger: 'content',
-                    description: 'What should the content of the shout be? If none, the shout will be cleared.',
+                    trigger: 'içerik',
+                    description: 'Bağırmanın içeriği ne olmalı? Eğer yoksa, bağırış silinecek.',
                     required: false,
                     type: 'String',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'Sebep',
+                    description: 'Sebep giriniz.',
                     isLegacyFlag: true,
                     required: false,
                     type: 'String',
