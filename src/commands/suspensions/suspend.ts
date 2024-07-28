@@ -24,27 +24,27 @@ import { provider } from '../../database';
 class SuspendCommand extends Command {
     constructor() {
         super({
-            trigger: 'suspend',
-            description: 'Temporarily fires a user.',
+            trigger: 'askıya almak',
+            description: 'Bir kullanıcıyı geçici olarak kovar.',
             type: 'ChatInput',
             module: 'suspensions',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to suspend?',
+                    description: 'Kimin uzaklaştırılmasını istiyorsunuz??',
                     autocomplete: true,
                     type: 'String',
                 },
                 {
-                    trigger: 'duration',
-                    description: 'How long should they be suspended for? (Format example: 1d, 3d12h, 3 days)',
+                    trigger: 'süre',
+                    description: 'Ne kadar süreyle uzaklaştırılmaları gerekiyor? (Format: 1g, 3g12h, 3 gün)',
                     type: 'String',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'Sebep',
+                    description: 'Sebep girin',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
