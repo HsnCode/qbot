@@ -50,6 +50,6 @@ export const config: BotConfig = {
         type: ActivityType.Watching,
         value: 'Tco Türkiye Cumhuriyeti Ordusu.',
     },
-    status: 'dnd',
+    status: 'online',
     deleteWallURLs: false,
 }
