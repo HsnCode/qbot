@@ -23,22 +23,22 @@ import { provider } from '../../database';
 class UnsuspendCommand extends Command {
     constructor() {
         super({
-            trigger: 'unsuspend',
-            description: 'Removes a suspension from a user, and ranks them back to their previous role.',
+            trigger: 'askıyı kaldır',
+            description: 'Bir kullanıcının askıya alınmasını kaldırır ve onları önceki durumlarına geri sıralar .',
             type: 'ChatInput',
             module: 'suspensions',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to unsuspend?',
-                    autocomplete: true,
+                    description: 'Kullanici seçin ',
+                      autocomplete: true,
                     type: 'String',
                 },
                 {
-                    trigger: 'reason',
-                    description: 'If you would like a reason to be supplied in the logs, put it here.',
+                    trigger: 'Sebep',
+                    description: 'Sebep giriniz.',
                     isLegacyFlag: true,
-                    required: false,
+                    required: true,
                     type: 'String',
                 },
             ],
