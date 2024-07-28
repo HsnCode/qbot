@@ -17,14 +17,14 @@ import { provider } from '../../database';
 class InfoCommand extends Command {
     constructor() {
         super({
-            trigger: 'info',
-            description: 'Displays information about a group member, and gives you some quick actions.',
+            trigger: 'bilgi',
+            description: 'Bir grup üyesi hakkındaki bilgileri görüntüler.',
             type: 'ChatInput',
             module: 'information',
             args: [
                 {
                     trigger: 'roblox-user',
-                    description: 'Who do you want to view the information of?',
+                    description: 'Kimin bilgilerini görmek istiyorsunuz??',
                     required: false,
                     type: 'String',
                 },
