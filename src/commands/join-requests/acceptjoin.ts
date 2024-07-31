@@ -30,7 +30,7 @@ class AcceptJoinCommand extends Command {
                     trigger: 'Sebep',
                     description: 'Sebep giriniz ',
                     isLegacyFlag: true,
-                    required: true,
+                    required: false,
                     type: 'String',
                 },
             ],
