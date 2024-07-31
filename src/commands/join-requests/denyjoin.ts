@@ -30,7 +30,7 @@ class DenyJoinCommand extends Command {
                     trigger: 'sebep',
                     description: 'Sebep Giriniz.',
                     isLegacyFlag: true,
-                    required: true,
+                    required: false,
                     type: 'String',
                 },
             ],
