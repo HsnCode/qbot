@@ -24,7 +24,7 @@ class ExileCommand extends Command {
             trigger: 'exile',
             description: 'Exiles a user from the Roblox group.',
             type: 'ChatInput',
-            module: 'admin',
+            module: 'shout',
             args: [
                 {
                     trigger: 'roblox-user',
